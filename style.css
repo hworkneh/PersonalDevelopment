@@ -8,8 +8,8 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    overflow:hidden;
-    background: linear-gradient(to right,  #2747b0, rgb(142, 255, 148));
+    overflow:hidden; 
+    background: linear-gradient(to right, #2747b0, rgb(142, 255, 148));
   
 }
 
