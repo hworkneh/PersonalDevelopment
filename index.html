@@ -1,6 +1,7 @@
+
 <html>
 <head>
-    <title> Using HTML and CSS</title>
+    <title> Using HTML, CSS and JS</title>
     <link rel="stylesheet" href="style.css"> 
 </head>
 
@@ -70,9 +71,16 @@
         </div>
 
        <div class="controls">
-           <img src="image/up.PNG" id="upBtn">
+
+            <div class ="up" id="upBtn"></div>
+           <h3>More</h3>
+            <div class="down" id="downBtn"></div>
+
+           <!-- <img src="image/up.PNG" id="upBtn">
            <h3>Personal Development</h3>
-           <img src="image/uparrow.PNG" id="downBtn">                                          
+           <img src="image/uparrow.PNG" id="downBtn">   -->
+           
+           
        </div>  
     </div>                       
         
@@ -100,4 +108,117 @@ downBtn.onclick = function()
 
 </body>
 </html>
+
+
+<html>
+<head>
+    <title> Using HTML, CSS and JS</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="image/self.PNG">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Yoga</a></li>
+                    <li><a href="#">Meditation</a></li>
+                    <li><a href="#">Consciousness</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="image/PersonalDevelopment.PNG" class="PersonalDev">
+           <div id="circle">
+               
+            <div class="feature one">
+                <div>
+                       <h1>Dreams</h1>
+                       <p>If You Can Dream It, You Can Achieve It.<br> -Tony Robbins</p>
+                       <br>
+                       <h1>Aspirations</h1>
+                       <p>Details Coming Soon...</p>
+
+                    </div>
+                </div>
+                
+               <div class="feature two">
+                <div>
+                    <h1>Self-Awareness</h1>
+                    <p>Details Coming Soon...</p>
+                    <br>
+                       <h1>Self-Knowledge</h1>
+                       <p>Details Coming Soon...</p>
+                 </div>
+               </div>
+
+               <div class="feature three">
+                <div>
+                    <h1>Identity</h1>
+                    <p>The fact of being who or what<br> a person or thing is...</p>
+                    <br>
+                       <h1>Talents</h1>
+                       <p>Details Coming Soon...</p>
+                 </div>
+               </div>
+
+               <div class="feature four">
+                <div>
+                    <h1>Potential</h1>
+                    <p>capable of becoming real</p>
+                    <br>
+                       <h1>Quality of Life</h1>
+                       <p>Details Coming Soon...</p>
+                 </div>
+                </div>
+
+          </div>
+        </div>
+
+       <div class="controls">
+
+            <div class ="up" id="upBtn"></div>
+           <h3>More</h3>
+            <div class="down" id="downBtn"></div>
+
+           <!-- <img src="image/up.PNG" id="upBtn">
+           <h3>Personal Development</h3>
+           <img src="image/uparrow.PNG" id="downBtn">   -->
+           
+           
+       </div>  
+    </div>                       
+        
+<script>/*click up and down events   <img src="Desktop/potential.PNG"> right below feature1,2,3,and 4*/
+    var circle = document.getElementById("circle")
+    var upBtn = document.getElementById("upBtn")
+    var downBtn = document.getElementById("downBtn")
+
+    var rotateValue = circle.style.transform;
+    var rotateSum;
+
+    upBtn.onclick = function()
+{
+    rotateSum = rotateValue + "rotate(-90deg)"/*unticlockwise direction*/
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+}
+downBtn.onclick = function()
+{
+    rotateSum = rotateValue + "rotate(90deg)"/*clockwise direction*/
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+}
+</script>
+
+</body>
+</html>
+
+<!-- Hanna@Nov2021 -->
 
